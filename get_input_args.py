@@ -51,8 +51,8 @@ def get_input_args():
     # TODO: 1a. EDIT parse.add_argument statements BELOW to add type & help for:
     #          --arch - the CNN model architecture
     #          --dogfile - text file of names of dog breeds
-    parser.add_argument('--arch', type = str, default = 'vgg', help ="path to the CNN Model Architecture" )
-    parser.add_argument('--dogfile', type = str, default = 'dognames.txt', help = "path to the dog names folder ")
+    parser.add_argument('--arch', type = str, default = 'vgg', help ="path to cnn modelaArchitecture" )
+    parser.add_argument('--dogfile', type = str, default = 'dognames.txt', help = "path to dog names")
 
     # TODO: 1b. Replace None with parser.parse_args() parsed argument 
     # collection that you created with this function 
