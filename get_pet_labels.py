@@ -95,11 +95,11 @@ def get_pet_labels(image_dir):
                     # If filename doesn't already exist in dictionary add it and it's
                     # pet label - otherwise print an error message because indicates 
                     # duplicate files (filenames)
-        if in_files[idx] not in results_dic:
-            results_dic[in_files[idx]] = [pet_label]
+            if in_files[idx] not in results_dic:
+                results_dic[in_files[idx]] = [pet_label]
 
-        else:
-            print("** Warning: Duplicate files exist in directory:", in_files[idx])
+            else:
+                print("** Warning: Duplicate files exist in directory:", in_files[idx])
          #Iterating through a dictionary printing all keys & their associated values
     print("\nPrinting all key-value pairs in dictionary results_dic:")
     for key in results_dic:
