@@ -43,9 +43,7 @@ def main():
     #set start time
     start_time = time()
     
-    #set sleep time
-    sleep(0)
-    
+     
    
     
     # TODO 1: Define get_input_args function within the file get_input_args.py
@@ -125,10 +123,10 @@ def main():
     end_time = time()
     
     # TODO 0: Computes overall runtime in seconds & prints it in hh:mm:ss format
-    tot_time = start_time - end_time #calculate difference between end time and start time
+    total_time = start_time - end_time #calculate difference between end time and start time
     print("\n** Total Elapsed Runtime:",
-          str(int((tot_time/3600)))+":"+str(int((tot_time%3600)/60))+":"
-          +str(int((tot_time%3600)%60)) )
+          str(int((total_time/3600)))+":"+str(int((total_time%3600)/60))+":"
+          +str(int((total_time%3600)%60)) )
     import json
     with open("results_stats.json", "w") as file:
         json.dump(results_stats, file)
